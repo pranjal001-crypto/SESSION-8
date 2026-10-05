@@ -1,7 +1,11 @@
 # Bug Fix Audit
 
-| Bug | Fix | Test |
-|---|---|---|
-| Wrong average | Used `len(marks)` | Single mark test |
-| 40 was not handled correctly | Used `>= 40` | Pass boundary |
-| 90 got B instead of A | Checked 90 first | A grade test |
+| Bug | Original | Fix | Test |
+|---|---|---|---|
+| Arithmetic | `len(marks)-1` | `len(marks)` | Single mark |
+| Boundary | `> 40` | `>= 40` | 40 test |
+| Unreachable branch | 90 checked after 60 | 90 checked first | 90 test |
+
+## Result
+
+10 specification-based tests passed successfully.
