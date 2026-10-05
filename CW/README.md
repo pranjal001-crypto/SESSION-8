@@ -3,21 +3,28 @@
 **Student:** Pranjal Agrawal
 
 ## Topic
-Specification-Driven Testing
+Testing and Debugging with AI
 
-## Files
-- student_utils.py
-- original_student_utils.py
-- test_student_utils.py
-- bug_fix_audit.md
-- ai_testing_observation.txt
+## Task
+The Student Grading Utility was tested using specification-based tests.
 
 ## Bugs Tested
-1. Average calculation
-2. Pass mark boundary
-3. Grade boundary
+
+1. Arithmetic bug in average calculation
+2. Boundary bug at the pass mark
+3. Unreachable A-grade branch
+
+## Files
+
+- `student_utils.py` - Fixed code
+- `original_student_utils.py` - Original buggy code
+- `test_student_utils.py` - 10 tests
+- `test_results.txt` - Test results
+- `bug_fix_audit.md` - Bug fixes
+- `ai_testing_observation.txt` - Testing observation
 
 ## Testing
+
 Run:
 
 ```bash
