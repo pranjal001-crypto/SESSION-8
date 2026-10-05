@@ -1,0 +1,12 @@
+AI Testing Observation
+
+AI can generate useful tests, but tests should be based on
+the specification.
+
+I checked boundary values such as 40 and 90.
+
+The main lesson was:
+
+Red → Fix → Green
+
+A test should fail for the buggy code and pass after the fix.
