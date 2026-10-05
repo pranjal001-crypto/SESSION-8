@@ -18,7 +18,7 @@ class TestDiscount(unittest.TestCase):
         self.assertEqual(discount(150), 0.20)
 
     def test_vip_discount(self):
-        self.assertalmostEqual(discount(100, True), 0.15)
+        self.assertAlmostEqual(discount(100, True), 0.15)
 
     def test_max_discount(self):
         self.assertEqual(discount(200, True), 0.25)
