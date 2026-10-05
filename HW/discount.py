@@ -1,12 +1,15 @@
-def discount(price, vip=False):
-    if price >= 5000:
-        d = 20
-    elif price >= 1000:
-        d = 10
+def discount(cart_total, vip=False):
+    if cart_total < 0:
+        raise ValueError("Cart total cannot be negative")
+
+    if cart_total > 100:
+        d = 0.20
+    elif cart_total > 50:
+        d = 0.10
     else:
-        d = 0
+        d = 0.0
 
     if vip:
-        d += 5
+        d += 0.05
 
-    return min(d, 25)
+    return min(d, 0.25)
