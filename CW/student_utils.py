@@ -1,12 +1,13 @@
-def calculate_average(marks):
+def average(marks):
     return sum(marks) / len(marks)
 
 
-def assign_grade(mark):
+def grade(mark):
     if mark >= 90:
         return "A"
     elif mark >= 60:
         return "B"
     elif mark >= 40:
         return "C"
-    return "F"
+    else:
+        return "F"
