@@ -1,0 +1,10 @@
+AI Testing Observation
+
+I used boundary-value tests for the discount rules.
+
+The important cases were 1000 and 5000.
+
+I also tested the VIP discount and maximum discount limit.
+
+The main lesson was to test the specification rather than
+only testing normal values.
