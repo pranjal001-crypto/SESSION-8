@@ -1,18 +1,31 @@
 # Session 08 - HW
 
-**Student:** Pranjal Agrawal  
-**Course:** B.Tech CSE  
-**University:** JECRC University
+**Student:** Pranjal Agrawal
 
 ## Topic
-Specification-Driven Testing
+E-Commerce Discount Calculator
+
+## Specification
+
+- Negative cart total raises `ValueError`
+- 0-50 gives 0% discount
+- 51-100 gives 10% discount
+- Above 100 gives 20% discount
+- VIP adds 5%
+- Maximum discount is 25%
+
+## Bugs Tested
+
+1. Boundary bug
+2. Unreachable branch
+3. Arithmetic bug
 
 ## Files
-- discount.py
-- test_discount.py
-- original_discount.py
-- bug_fix_audit.md
-- ai_testing_observation.txt
+
+- `discount.py` - Fixed code
+- `original_discount.py` - Original buggy code
+- `test_discount.py` - 6 specification-based tests
+- `test_results.txt` - Test results
 
 ## Testing
 
